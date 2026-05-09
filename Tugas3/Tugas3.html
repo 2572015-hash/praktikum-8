@@ -1,0 +1,53 @@
+<!-- 2572015 - Steven Theodore Alden -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenRGB - 2572015</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+
+        <h1>RGB Control Panel</h1>
+
+        <!-- Input R, G, B -->
+        <div class="rgb-group">
+            <input type="number" id="r" class="rgb-input" placeholder="R" min="0" max="255">
+            <input type="number" id="g" class="rgb-input" placeholder="G" min="0" max="255">
+            <input type="number" id="b" class="rgb-input" placeholder="B" min="0" max="255">
+        </div>
+
+        <!-- Tombol Terapkan dan Acak -->
+        <div class="btn-container">
+            <button class="btn-submit" onclick="terapkanWarna()">Terapkan</button>
+            <button class="btn-random" onclick="acakWarna()">Acak Warna</button>
+        </div>
+
+        <!-- Tampilan skor -->
+        <div class="display-area">
+            <div>Skor Saat Ini:</div>
+            <div id="counter">0</div>
+        </div>
+
+        <!-- Tombol tambah dan kurang skor -->
+        <div class="btn-container">
+            <button class="btn-add" onclick="ubahSkor(1)">Tambah (+1)</button>
+            <button class="btn-remove" onclick="ubahSkor(-1)">Kurang (-1)</button>
+        </div>
+
+        <!-- Tombol reset -->
+        <button class="btn-reset" onclick="resetSemua()">Reset Ke Default</button>
+
+        <!-- Footer -->
+        <div class="footer">
+            <strong>&copy; 2026 2572015 - Steven Theodore Alden. All rights reserved.</strong>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

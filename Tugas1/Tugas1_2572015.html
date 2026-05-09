@@ -1,0 +1,35 @@
+<!-- 2572015 - Steven Theodore Alden -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game - 2572015</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="kotak-utama">
+
+        <div class="skor" id="skor">0 - 0</div>
+
+        <div class="gambar-area">
+            <div class="sisi-player">
+                <img id="gambar-player" src="" alt="">
+            </div>
+            <div class="sisi-bot">
+                <img id="gambar-bot" src="" alt="">
+            </div>
+        </div>
+        <div class="tombol-pilihan">
+            <button onclick="mainkan('batu')">🪨</button>
+            <button onclick="mainkan('kertas')">📝</button>
+            <button onclick="mainkan('gunting')">✂️</button>
+        </div>
+        <div class="hasil" id="hasil"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

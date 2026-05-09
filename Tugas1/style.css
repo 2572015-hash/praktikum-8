@@ -1,0 +1,95 @@
+/* 2572015 - Steven Theodore Alden */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.kotak-utama {
+    background-color: white;
+    border: 2px solid #aaa;
+    padding: 30px 40px;
+    text-align: center;
+    width: 420px;
+    border-radius: 8px;
+}
+
+.skor {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.gambar-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    min-height: 150px;
+}
+
+.sisi-player img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    transform: scaleX(1);
+}
+
+.sisi-bot img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    transform: scaleX(-1);
+}
+
+.sisi-player img[src=""],
+.sisi-bot img[src=""] {
+    display: none;
+}
+
+.tombol-pilihan {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tombol-pilihan button {
+    padding: 6px 8px;
+    cursor: pointer;
+    border: 1px solid #aaa;
+    background-color: white;
+    border-radius: 6px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tombol-pilihan button:hover {
+    background-color: #eee;
+}
+
+/* Gambar di dalam tombol */
+.tombol-pilihan button img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+/* ======= HASIL ======= */
+.hasil {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    min-height: 28px;
+    margin-top: 5px;
+}
